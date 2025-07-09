@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Instagram Followers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .username-input {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      max-width: 400px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .packages {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .package-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .package-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .followers {
+      font-size: 22px;
+      font-weight: bold;
+      color: #8e44ad;
+    }
+
+    .price {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .buy-btn {
+      background: #8e44ad;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .buy-btn:hover {
+      background: #6c3483;
+    }
+
+    .upi-box {
+      margin-top: 25px;
+      background: #dff0d8;
+      padding: 15px;
+      border-left: 5px solid #4cae4c;
+      border-radius: 6px;
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .packages {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚀 Buy Instagram Followers 🚀</h1>
+  </header>
+
+  <div class="main">
+    <div class="title">
+      <h2>Select a Package Below</h2>
+    </div>
+
+    <div class="username-input">
+      <input type="text" id="username" placeholder="Enter your Instagram username">
+    </div>
+
+    <div class="packages">
+      <div class="package-card">
+        <div class="followers">100 Followers</div>
+        <div class="price">₹80</div>
+        <button class="buy-btn" onclick="showUPI('100')">Buy Now</button>
+      </div>
+      <div class="package-card">
+        <div class="followers">500 Followers</div>
+        <div class="price">₹300</div>
+        <button class="buy-btn" onclick="showUPI('500')">Buy Now</button>
+      </div>
+      <div class="package-card">
+        <div class="followers">1000 Followers</div>
+        <div class="price">₹500</div>
+        <button class="buy-btn" onclick="showUPI('1000')">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="upi-box" id="upiBox">
+      <strong>Pay using UPI:</strong><br>
+      <span style="font-size: 18px; color: #000;">unknown0098@ybl</span><br><br>
+      After payment, followers will be delivered within 30–60 minutes.
+    </div>
+  </div>
+
+  <script>
+    function showUPI(packageType) {
+      const username = document.getElementById("username").value.trim();
+      if (username === "") {
+        alert("Please enter your Instagram username before buying.");
+        return;
+      }
+
+      document.getElementById("upiBox").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
